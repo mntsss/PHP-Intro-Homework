@@ -1,32 +1,63 @@
 <?php
 
 namespace NFQ;
+
 use SebastianBergmann\Timer\Timer;
 use \ParagonIE\EasyRSA\KeyPair;
+use \ParagonIE\EasyRSA\EasyRSA;
 
 class WithoutStrict{
 
-    protected $size;
+    private $privateKey;
+    private $publicKey;
+    private $message;
+    private $encryptedMessage;
 
-    public function __construct($size)
-    {
-        $this->size = $size;
-
-        Timer::start();
-
-        $keys = $this->generateKeys($size);
-
-        $time = Timer::stop();
-        echo 'Time: '.$time;
-        var_dump($keys);
+    public function __call($name, $args){
+      Timer::start();
+      call_user_func_array(array($this, $name), $args);
+      $time = Timer::stop();
+      echo "Method $name took $time sec. to complete.\n";
     }
 
-    private function generateKeys($size){
+    public function __get($name) {
+        if (!property_exists($this, $name))
+            echo "Property does not exist.";
+        $accessor = "get" . ucfirst($name);
+        if(method_exists($this, $accessor) && is_callable(array($this, $accessor)))
+          return $this->$accessor();
+    }
+
+    private function generateKeys($size = 2048){
 
         $keyPair = KeyPair::generateKeyPair($size);
-        $privateKey = $keyPair->getPrivateKey();
-        $publicKey = $keyPair->getPublicKey();
+        $this->privateKey = $keyPair->getPrivateKey();
+        $this->publicKey = $keyPair->getPublicKey();
+    }
 
-        return ['private' => $privateKey, 'public' => $publicKey];
+    private function encryptMessage($message = null){
+      if(isset($message))
+        $this->message = $message;
+      $this->encryptedMessage = EasyRSA::encrypt($this->message, $this->publicKey);
+    }
+
+    private function decryptMessage($message = null){
+      if(isset($message))
+        $this->encryptedMessage = $message;
+      $this->message = EasyRSA::decrypt($this->encryptedMessage, $this->privateKey);
+    }
+
+    // getters
+
+    public function getMessage(){
+      return $this->message;
+    }
+
+    public function getKeys(){
+      return ['public' => $this->publicKey, 'private' => $this->privateKey];
+    }
+
+    public function getEncryptedMessage(){
+      return $this->encryptedMessage;
     }
 }
