@@ -26,3 +26,4 @@ Using strict types and type hinting pros:
   
 Cons:
   I guess a little bit more code.
+
