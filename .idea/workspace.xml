@@ -4,8 +4,6 @@
     <list default="true" id="3caeb8f0-2dc5-4bb9-9bcc-c34900f8a7a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WithStrict.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WithStrict.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WithoutStrict.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WithoutStrict.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,14 +23,14 @@
         <counts>
           <entry key="gitignore" value="9" />
           <entry key="json" value="30" />
-          <entry key="php" value="1161" />
+          <entry key="php" value="1469" />
           <entry key="txt" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="30" />
-          <entry key="PHP" value="1161" />
+          <entry key="PHP" value="1469" />
           <entry key="PLAIN_TEXT" value="119" />
         </counts>
       </usages-collector>
@@ -58,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#50#72#0#PHP" expanded="true" />
               </folding>
@@ -70,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WithStrict.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#47#81#0#PHP" expanded="true" />
               </folding>
@@ -82,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WithoutStrict.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="481">
               <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
               <folding>
                 <element signature="e#23#57#0#PHP" expanded="true" />
@@ -153,8 +151,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="90" />
+    <option name="y" value="-16" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -222,12 +222,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539576332543</updated>
-      <workItem from="1539576334704" duration="9221000" />
+      <workItem from="1539576334704" duration="10098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9221000" />
+    <option name="totallyTimeSpent" value="10098000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -239,12 +239,12 @@
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49733475" weight="0.32286024" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.42004263" side_tool="true" visible="true" weight="0.3347779" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49626866" visible="true" weight="0.32286024" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50373137" side_tool="true" visible="true" weight="0.32286024" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="7" sideWeight="0.49733475" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.57995737" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.5794243" weight="0.3347779" />
       <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.49946696" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -287,9 +287,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WithStrict.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#47#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WithoutStrict.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="481">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding>
             <element signature="e#23#57#0#PHP" expanded="true" />
@@ -297,20 +307,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WithStrict.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#50#72#0#PHP" expanded="true" />
           </folding>

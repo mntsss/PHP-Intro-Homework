@@ -1,5 +1,9 @@
 <?php
-
+/*
+ * Mantas Muliarčikas
+ * mntsss@gmail.com
+ * https://github.com/mntsss/PHP-Intro-Homework
+ * */
 require __DIR__ . '/vendor/autoload.php';
 
 use NFQ\WithoutStrict;
@@ -9,7 +13,7 @@ use NFQ\WithStrict;
 echo "Without strict & type hinting".PHP_EOL;
 $instNotStrict = new WithoutStrict();
 
-//generating given bit size public & private keys
+//generating a given bit size public & private keys
 $instNotStrict->generateKeys(4096);
 
 // encrypting a message, if no params given - takes message from object's private property
@@ -17,7 +21,7 @@ $instNotStrict->encryptMessage("Hello world!");
 echo "Encrypted message:".PHP_EOL;
 echo $instNotStrict->encryptedMessage.PHP_EOL;
 
-// decrypts a message from object's encryptedMessage property value
+// decrypting a message from object's encryptedMessage property value
 $instNotStrict->decryptMessage();
 echo "Decrypted message:".PHP_EOL.$instNotStrict->message.PHP_EOL;
 
